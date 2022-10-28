@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: orderms-pod
+  labels:
+    name: orderms-pod
+    app: pizzashop
+spec:
+  containers: 
+    - name: orderms-pod
+      image: bhumswrang/orderms
+      ports:
+      - containerPort: 8089
+      env:
+        - name: USER_SERVICE
+          valueFrom:
+            configMapKeyRef:
+              name: order-config
+              key: user-service
+        - name: PIZZA_CATALOGUE_SERVICE
+          valueFrom:
+            configMapKeyRef:
+              name: order-config
+              key: pizza-catalogue-service   
+
+      

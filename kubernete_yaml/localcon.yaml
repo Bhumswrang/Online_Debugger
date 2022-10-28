@@ -1,0 +1,17 @@
+# kind: Service
+# apiVersion: v1
+# metadata:
+#   name: pizza-catalogue-inservice
+# spec:
+#   type: ExternalName
+#   externalName: host.minikube.internal
+
+
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: userinservice
+spec:
+  type: ExternalName
+  externalName: host.minikube.internal

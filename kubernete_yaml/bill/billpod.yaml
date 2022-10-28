@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: billms-pod
+  labels:
+    name: billms-pod
+    app: pizzashop
+spec:
+  containers: 
+    - name: billms-pod
+      image: bhumswrang/billms
+      ports:
+      - containerPort: 8088
+      env:
+        - name: ORDER_SERVICE
+          valueFrom:
+            configMapKeyRef:
+              name: bill-config
+              key: order-service
+        - name: OFFER_SERVICE
+          valueFrom:
+            configMapKeyRef:
+              name: bill-config
+              key: offer-service   
+
+      

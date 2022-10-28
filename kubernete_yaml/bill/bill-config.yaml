@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bill-config
+data:
+  order-service: http://order-inservice:8089/order/orders/
+  offer-service: http://couponinservice:8081/coupon/getOffer/

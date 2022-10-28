@@ -1,0 +1,123 @@
+Bill : 8088
+http://localhost:8088/bill/bills/
+msbill.com
+
+{
+    "bill_id":2
+}
+
+
+_______________________________________
+
+Order: 8089
+http://localhost:8089/order/orders/
+msorder.com
+
+{
+    "no_ofPizza":9,
+    "code":"23478",
+    "pid":2,
+    "uid":2
+}
+
+__________________________________________
+
+Pizza_Catalogue: 8086
+http://localhost:8086/pizza/pizzas/
+mspizza.com
+
+{    
+    
+    "p_name": "Cheese Pizza",
+    "type": "Veg",
+    "price": "199"
+}
+
+{    
+    
+    "p_name": "Paneer Pizza",
+    "type": "Veg",
+    "price": "199"
+}
+
+{    
+    
+    "p_name": "Margeritta Pizza",
+    "type": "Veg",
+    "price": "169"
+}
+
+{    
+    
+    "p_name": "Corn Pizza",
+    "type": "Veg",
+    "price": "299"
+}
+
+
+{    
+    
+    "p_name": "Chicken Pizza",
+    "type": "Non-Veg",
+    "price": "299"
+}
+__________________________________________
+
+Coupon: 8081
+http://localhost:8081/coupon/coupons/
+{
+    "code": 11111,
+    "offer": 10
+}
+
+{
+    "code": 22222,
+    "offer": 20
+}
+
+{
+    "code": 33333,
+    "offer": 25
+}
+
+{
+    "code": 44444,
+    "offer": 30
+}
+____________________________________________
+User: 8083
+
+http://localhost:8083/user/users/
+
+{
+        
+        "u_name": "Arjun",
+        "phone": "7892060158",
+        "email": "arj8@gmail.com",
+        "address": "Assam"
+    }
+
+
+{
+    "u_name": "Leena",
+    "phone": "7112060343",
+    "email": "ls@gmail.com",
+    "address": "Goa"
+}
+
+{
+    "u_name": "Bhum",
+    "phone": "7002060157",
+    "email": "bhumn98@gmail.com",
+    "address": "Assam"
+}
+
+{
+    "u_name": "KK Sharma",
+    "phone": "8602960166",
+    "email": "kk@gmail.com",
+    "address": "Punjab"
+}
+
+__________________________________________
+

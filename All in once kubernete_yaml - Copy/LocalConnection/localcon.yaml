@@ -1,0 +1,8 @@
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: userinservice
+spec:
+  type: ExternalName
+  externalName: host.minikube.internal

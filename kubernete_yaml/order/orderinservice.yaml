@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-inservice
+spec:
+  # type: NodePort
+  ports: 
+    - port: 8089
+      # targetPort: 8086
+      # nodePort: 30008
+  selector: 
+    name: orderms-pod
+    app: pizzashop

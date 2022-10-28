@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: couponinservice
+spec:
+  # type: NodePort
+  ports: 
+    - port: 8081
+      # targetPort: 8083
+      # nodePort: 30006
+  selector:
+    name: couponms-pod 
+    app: pizzashop

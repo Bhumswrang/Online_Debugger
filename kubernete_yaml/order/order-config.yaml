@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: order-config
+data:
+  user-service: http://userinservice:8083/user/users/
+  pizza-catalogue-service: http://pizza-catalogue-inservice:8086/pizza/pizzas/

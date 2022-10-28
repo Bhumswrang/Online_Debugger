@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pizza-cataloguems-pod
+  labels:
+    name: pizza-cataloguems-pod
+    app: pizzashop
+spec:
+  containers: 
+    - name: pizza-cataloguems-pod
+      image: bhumswrang/pizza_cataloguems
+      ports:
+      - containerPort: 8086
+      

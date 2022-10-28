@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bill-inservice
+spec:
+  # type: NodePort
+  ports: 
+    - port: 8088
+      # targetPort: 8086
+      # nodePort: 30008
+  selector: 
+    name: billms-pod
+    app: pizzashop

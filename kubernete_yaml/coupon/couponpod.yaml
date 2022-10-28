@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: couponms-pod
+  labels:
+    name: couponms-pod 
+    app: pizzashop
+spec:
+  containers: 
+    - name: couponms-pod
+      image: bhumswrang/couponms
+      ports:
+      - containerPort: 8081
+      
